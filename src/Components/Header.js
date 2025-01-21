@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';  // Import Link for navigation
-
 function HeaderComp() {
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -60,7 +59,7 @@ function HeaderComp() {
             <div style={{ display: 'flex', justifyContent: 'flex-end', paddingRight: '3vw' }}>
               {/* Toggle between hamburger and exit icons */}
               <img 
-                src={menuOpen ? "/exit.svg" : "/hamburger.svg"} 
+                src={menuOpen ? "/Exit.svg" : '/Hamburger.svg'} 
                 alt={menuOpen ? "Close Menu" : "Open Menu"} 
                 style={{ width: '10vw', height: '10vw', zIndex: 3, cursor: 'pointer' }} 
                 onClick={toggleMenu}
